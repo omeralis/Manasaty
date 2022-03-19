@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   position: absolute;
   bottom: 120px;
-  left: 300px;
+  left: 195px;
   animation: MoveUpDownThree 5s linear infinite;
 }
 
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   position: absolute;
   bottom: 0;
-  left: 450px;
+  left: 80px;
   right: 0;
   animation: MoveUpDownSeven 6s linear infinite;
 }
@@ -178,8 +178,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.4;
   border-radius: 50%;
   position: absolute;
-  bottom: 0;
-  left: 350px;
+  bottom: 70px;
+  left: 246px;
   animation: MoveUpDownEight 11s linear infinite;
 }
 
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   position: absolute;
   bottom: 0;
-  left: 450px;
+  left: 155px;
   animation: MoveUpDownNine 12s linear infinite;
 }
 
@@ -1094,7 +1094,24 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .3s ease-in-out;
     fill:#bb8f2c;
   }
-  
+  @media (max-width: 992px) {
+    .links {
+      --link-size: calc(var(--base-grid)*15);
+  }
+    .links__icon {
+      width: calc(var(--base-grid)*5);
+      height: calc(var(--base-grid)*5);
+    }
+    .links__link {
+      width: 55%;
+      height: 55%;
+  }
+  .links__text {
+    font-size: .8rem;
+    top: 3rem;
+  }
+  }
+
   .links__text {
     position: absolute;
     width: 140%;
