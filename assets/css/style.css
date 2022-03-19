@@ -1098,6 +1098,11 @@ h1, h2, h3, h4, h5, h6 {
     .links {
       --link-size: calc(var(--base-grid)*15);
   }
+  .links__text {
+    font-size: 12px !important;
+    top: 3rem !important;
+    left: -10px !important;
+  }
     .links__icon {
       width: calc(var(--base-grid)*5);
       height: calc(var(--base-grid)*5);
@@ -1106,10 +1111,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 55%;
       height: 55%;
   }
-  .links__text {
-    font-size: .8rem;
-    top: 3rem;
-  }
+
   }
 
   .links__text {
@@ -1123,6 +1125,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: calc(var(--base-grid)*8.5);
     animation: text .3s ease-in-out forwards;
     top: 5rem;
+    font-weight: 900;
   }
   
   .links__link:after {
