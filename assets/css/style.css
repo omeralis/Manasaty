@@ -1,9 +1,4 @@
-/**
-* Template Name: TheEvent - v4.7.0
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -12,6 +7,26 @@ body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+}
+body   {
+  width: 100%;
+  background: url(../img/imgMans/mansty.png) top center;
+  background-size: cover;
+  background-attachment: fixed; 
+
+}
+@media (min-width: 1024px) {
+  body {
+    background-attachment: fixed; 
+  }
+}
+@media (max-width: 992px) {
+  body {
+    width: 100%;
+    background: url(../img/imgMans/manstyMob.png) top center;
+    background-size: cover;
+    background-attachment: fixed; 
+  }
 }
 
 a {
@@ -89,19 +104,19 @@ h1, h2, h3, h4, h5, h6 {
 .a-one {
   width: 100px;
   height: 100px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.5;
   border-radius: 50%;
   position: absolute;
   bottom: 0;
-  left: 150px;
+  left: 560px;
   animation: MoveUpDown 5s linear infinite;
 }
 
 .a-two {
   width: 150px;
   height: 150px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.7;
   border-radius: 50%;
   position: absolute;
@@ -113,31 +128,31 @@ h1, h2, h3, h4, h5, h6 {
 .a-three {
   width: 120px;
   height: 120px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.2;
   border-radius: 50%;
   position: absolute;
   bottom: 120px;
-  left: 195px;
+  left: 160px;
   animation: MoveUpDownThree 5s linear infinite;
 }
 
 .a-four {
   width: 80px;
   height: 80px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.4;
   border-radius: 50%;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 220px;
   animation: MoveUpDownFour 15s linear infinite;
 }
 
 .a-five {
   width: 50px;
   height: 50px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.9;
   border-radius: 50%;
   position: absolute;
@@ -149,24 +164,24 @@ h1, h2, h3, h4, h5, h6 {
 .a-six {
   width: 175px;
   height: 175px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.6;
   border-radius: 50%;
   position: absolute;
   bottom: 250px;
-  right: 200px;
+  right: 360px;
   animation: MoveUpDownSix 7s linear infinite;
 }
 
 .a-seven {
   width: 250px;
   height: 250px;
-  background-color: #313a4e9e;
+  background-color: #56657a9e;
   opacity: 0.3;
   border-radius: 50%;
   position: absolute;
   bottom: 0;
-  left: 80px;
+  left: 280px;
   right: 0;
   animation: MoveUpDownSeven 6s linear infinite;
 }
@@ -174,19 +189,19 @@ h1, h2, h3, h4, h5, h6 {
 .a-eight {
   width: 75px;
   height: 75px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.4;
   border-radius: 50%;
   position: absolute;
   bottom: 70px;
-  left: 246px;
+  left: 710px;
   animation: MoveUpDownEight 11s linear infinite;
 }
 
 .a-nine {
   width: 45px;
   height: 45px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.7;
   border-radius: 50%;
   position: absolute;
@@ -198,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 .a-ten {
   width: 150px;
   height: 150px;
-  background-color: #313a4e;
+  background-color: #56657a;
   opacity: 0.6;
   border-radius: 50%;
   position: absolute;
@@ -206,7 +221,23 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   animation: MoveUpDownTen 14s linear infinite;
 }
-
+@media (max-width: 992px) {
+  .a-eight {
+    left: 246px;
+  }
+  .a-one {
+    left: 150px;
+  }
+  .a-four {
+    right: 0;
+  }
+  .a-seven {
+    left: 80px;
+  }
+  .a-six {
+    right: 200px;
+  }
+}
 @keyframes a-one {
   from { top: 0; left: 0; }
   to   { top: 100px; left: 100px; }
@@ -622,8 +653,6 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/imgMans/mansty.png) top center;
-  background-size: cover;
   overflow: hidden;
   position: relative;
 }
@@ -632,20 +661,10 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: fixed; 
   }
 }
-@media (max-width: 992px) {
-  #hero {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/imgMans/manstyMob.png) top center;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-  }
-}
 
 #hero:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(6, 12, 34, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -808,21 +827,15 @@ h1, h2, h3, h4, h5, h6 {
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/imgMans/logo.png");
-  background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
   padding: 60px 0 40px 0;
 }
-@media (min-width: 1024px) {
-  #about {
-    background-attachment: fixed;
-  }
-}
+
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(13, 20, 41, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -852,27 +865,21 @@ h1, h2, h3, h4, h5, h6 {
 # services Section
 --------------------------------------------------------------*/
 #services {
-  padding: 60px 0 30px 0;
-  background: url("../img/imgMans/mansty1.png");
-  background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
+  padding-bottom: 20px;
 }
 #services::before{
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(6, 12, 34, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
-@media (min-width: 1024px) {
-  #services {
-    background-attachment: fixed;
-  }
-}
+
 #services .card{
   height: 15rem;
   border: unset !important;
@@ -1049,8 +1056,10 @@ h1, h2, h3, h4, h5, h6 {
       animation-timing-function: steps;
       opacity: 1;
       border-radius: 50%;
-    border: 0.5rem solid rgb(62 85 123);
-    background: rgb(5 30 56 / 50%);
+      border: 0.5rem solid rgb(187 143 44);
+    background: rgb(187 143 44 / 40%);
+    /* border: 0.5rem solid rgb(62 85 123);
+    background: rgb(5 30 56 / 50%); */
   }
   .links__list {
     position: relative;
@@ -1191,8 +1200,26 @@ h1, h2, h3, h4, h5, h6 {
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
+  overflow: hidden;
+  position: relative;
+  /* background:rgb(5 27 53); */
   padding: 60px 0;
+  /* color: #eee; */
+  font-size: 14px;
 }
+#contact::before{
+  content: "";
+  background: rgba(6, 12, 34, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* #contact {
+  padding: 60px 0;
+} */
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
@@ -1267,7 +1294,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border-top-color: #fff;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -1318,13 +1345,24 @@ h1, h2, h3, h4, h5, h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background:rgb(5 27 53);
+  overflow: hidden;
+  position: relative;
   padding: 0 0 25px 0;
-  color: #eee;
+  color: #fff;
   font-size: 14px;
 }
+#footer::before{
+  content: "";
+  background: rgba(13, 20, 41, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 #footer .footer-top {
-  background: rgb(5 27 53);
+  /* background: rgb(5 27 53); */
   padding: 60px 0 30px 0;
 }
 #footer .footer-top .footer-info {
@@ -1352,8 +1390,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #footer .footer-top .social-links a {
   display: inline-block;
-  background: #2226368a;
-  color: #eee;
+  background: #bb8f2c;
+  color: white;
+  position: relative;
   line-height: 1;
   margin-right: 4px;
   border-radius: 50%;
@@ -1369,7 +1408,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 #footer .footer-top .social-links a:hover {
-  background: #bb8f2c;
+  background: #2226368a;
   color: #fff;
 }
 #footer .footer-top h4 {
@@ -1380,6 +1419,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-bottom: 12px;
   border-bottom: 2px solid #bb8f2c;
+}
+#footer .footer-top strong {
+  color: #fff;
+  position: relative;
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
@@ -1393,25 +1436,33 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 5px;
   color: #bb8f2c;
   font-size: 18px;
+  position: relative;
+  font-weight: bold;
 }
 #footer .footer-top .footer-links ul li {
   border-bottom: 1px solid #bb8f2c;
   padding: 10px 0;
+  position: relative;
 }
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #eee;
+  color: #fff;
+  position: relative;
 }
 #footer .footer-top .footer-links ul a:hover {
   color: #bb8f2c;
+  position: relative;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
 #footer .footer-top .footer-contact p {
   line-height: 26px;
+  text-align: right;
+  color: rgb(197, 196, 196);
+  position: relative;
 }
 #footer .footer-top .footer-newsletter {
   margin-bottom: 30px;
@@ -1437,9 +1488,19 @@ h1, h2, h3, h4, h5, h6 {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+  position: relative;
 }
 #footer .credits {
   text-align: center;
   font-size: 13px;
-  color: #ddd;
+  color: #fff;
+  position: relative;
+}
+@media (max-width: 992px) {
+  #footer {
+   text-align: center;
+  }
+  #footer .footer-top .footer-contact p {
+    text-align: center;
+  }
 }
