@@ -350,10 +350,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #social-sidebar {
-    width: 300px;
-    background: #fff;
+    /* width: 300px; */
+    /* background: #fff; */
     border-right: 1px solid #e6e9ec;
-    left: -300px;
+    /* left: -300px; */
   }
 }
 #social-sidebar  .nav-menu * {
@@ -1690,7 +1690,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   background-color: #f2f3f5;
-  background: linear-gradient(#123663, #35526e);
+  background: linear-gradient(#bb8f2cad ,#bb8f2c);
+  /* background: linear-gradient(#123663, #35526e); */
   box-shadow: 0 0 70px 0px #18345d70;
   border-radius: 10px;
 }
