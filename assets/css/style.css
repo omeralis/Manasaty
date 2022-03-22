@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   right: 15px;
   bottom: 15px;
-  z-index: 996;
+  z-index: 1024;
   background: #bb8f2c;
   width: 40px;
   height: 40px;
@@ -339,9 +339,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #social-sidebar {
   position: fixed;
-  top: 0;
+  top: 5rem;
   right: 0;
-  bottom: 0;
+  bottom: 5rem;
   z-index: 9997;
   transition: all 0.5s;
   padding: 15px;
@@ -448,12 +448,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*---------end -------------*/
 
-
-
-
-
-
-
 /*-------------------*/
 
 /* Sections Header
@@ -462,6 +456,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 60px;
   position: relative;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 .section-header::before {
   content: "";
@@ -488,7 +483,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: #9195a2;
 }
-
+.section-h4{
+  text-align: end;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #bb8f2c;
+  margin: 0 5rem;
+}
+.section-p{
+  text-align: end;
+  font-size: 1.3rem;
+  color: #d1d1d1;
+  margin: 0 5rem;
+}
 .section-with-bg {
   background-color: #f6f7fd;
 }
@@ -526,7 +533,10 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 80px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+
 }
 @media (max-width: 992px) {
   #header #logo img {
@@ -772,6 +782,14 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#canvas1 {
+  /* position: absolute; */
+  /* background: rgba(6, 12, 34, 0.6); */
+
+  /* background: rgb(8 56 87); */
+  width: 100%;
+  height: 100%;
+}
 #hero {
   width: 100%;
   height: 100vh;
@@ -1482,7 +1500,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .footer-top {
   /* background: rgb(5 27 53); */
-  padding: 60px 0 30px 0;
+  padding: 0px 0;
+  position: relative;
+    border-bottom: 2px solid #bb8f2c;
 }
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
@@ -1514,7 +1534,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   line-height: 1;
   margin-right: 4px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 36px;
   height: 36px;
   transition: 0.3s;
@@ -1530,14 +1550,46 @@ h1, h2, h3, h4, h5, h6 {
   background: #2226368a;
   color: #fff;
 }
+#footer .footer-top .header-foot{
+  display: flex;
+  justify-content: end;
+}
+#footer .footer-top .header-foot i.head-icon{
+  position: relative;
+  padding: 0 2rem;
+  font-size: 4rem;
+  color: #d8a126;
+}
+#footer .footer-top .header-foot i {
+  padding: 1px 10px;
+    font-size: 20px;
+}
+#footer .footer-top .header-foot i:hover{
+  color: #ffffff;
+}
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #fff;
+  color: #d8a126;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #bb8f2c;
+  padding-bottom: 0;
+  line-height: 2;
+  text-align: center;
+  /* border-bottom: 2px solid #bb8f2c; */
+}
+#footer .footer-top h4 span{
+  font-size: 2rem;
+}
+#footer .footer-top h4 span:hover{
+color: #ffffff;
+}
+#footer .footer-top h4 p{
+  text-align: end;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-family: none;
+  margin: 0;
 }
 #footer .footer-top strong {
   color: #fff;
@@ -1545,6 +1597,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+}
+#footer .footer-top .footer-links .input-group-text {
+  padding: 0.5rem 0.75rem;
+  background-color: #ffffff;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1559,9 +1615,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 #footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #bb8f2c;
-  padding: 10px 0;
+  /* border-bottom: 1px solid #bb8f2c; */
+  /* text-align: center; */
   position: relative;
+  padding: 0.5rem 7rem 0.5rem 0;
+  margin: unset !important;
+  text-align: end;
 }
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
@@ -1569,6 +1628,8 @@ h1, h2, h3, h4, h5, h6 {
 #footer .footer-top .footer-links ul a {
   color: #fff;
   position: relative;
+  font-weight: bold;
+  font-size: 1rem;  
 }
 #footer .footer-top .footer-links ul a:hover {
   color: #bb8f2c;
@@ -1606,7 +1667,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 5px;
   position: relative;
 }
 #footer .credits {
@@ -1773,3 +1834,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #bb8f2c;
   border-color: #795910;
 }
+
+/*-----------------------------*/
+

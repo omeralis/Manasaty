@@ -39,7 +39,7 @@
     <div class="container-fluid container-xxl d-flex align-items-center">
 
       <div id="logo" class="me-auto">
-        <a href="index.html" class="scrollto"><img src="assets/img/imgMans/new-logo-2.png" title=""></a>
+        <a href="index.html" class="scrollto"><img src="assets/img/imgMans/logo.png" title=""></a>
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
@@ -65,10 +65,14 @@
           </a></li>
       </ul>
     </nav>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
   </div><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
+    <canvas id="canvas1"></canvas>
+
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">منصتي<br><span>للخدمات </span>الرقمية </h1>
       <a href="assets/Video/1.mp4" class="glightbox play-btn mb-4"></a>
@@ -78,7 +82,7 @@
   <!-- End Hero Section -->
   <main id="main">
     <!-- ======= animate ======= -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12">
         <div class="a-one animate"></div>
         <div class="a-two animate"></div>
@@ -91,8 +95,7 @@
         <div class="a-nine animate"></div>
         <div class="a-ten animate"></div>
       </div>
-      <!--/ col end -->
-    </div>
+    </div> -->
     <!-- ======= About Section ======= -->
     <section id="about">
       <div class="container" data-aos="fade-up">
@@ -120,6 +123,17 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>الخدمات</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-end">
+            <img src="./assets/img/imgMans/manstyAlrg-removebg-preview.png" style="height: 10rem;" alt="" srcset="">
+          </div>
+          <div class="col-lg-6">
+            <h4 class="section-h4"> خدماتي الرقمية</h4>
+            <p class="section-p">
+              خدماتنا متوفرة على مدار الساعة و طيلة أيام الأسبوع لتلبية كافة طلباتكم بكل سرعة و يسر عبر جميع قنواتنا
+            </p>
+          </div>
         </div>
         <!-- <div class="links">
           <ul class="links__list" style="--item-total:5">
@@ -150,39 +164,15 @@
           <div class="slider__wrapper">
             <button class="btn-slider-left slider__arrow slider__arrow-prev js-slider-prev">&#8249;</button>
             <div class="slider__inner js-slider-inner">
-              <div id="1" class="slider__slide">
-                <div class="slide__content">
-                  <span>منصة العمالة المساعدة</span>
-                  <img src="assets/img/services/labor.png" class="slider__image" />
-                </div>
-              </div>
-              <div id="2" class="slider__slide">
-                <div class="slide__content">
-                  <span>منصة الشركات</span>
-                  <img src="assets/img/services/company.png" class="slider__image" />
-                </div>
-              </div>
-              <div id="3" class="slider__slide">
-                <div class="slide__content">
-                  <span>منصة بياناتي</span>
-                  <img src="assets/img/services/data.png" class="slider__image" />
-                </div>
-              </div>
-              <div id="4" class="slider__slide">
-                <div class="slide__content">
-                  <span> منصة للخدمات الاخرى</span>
-                  <img src="assets/img/services/other-services.png" class="slider__image" />
-                </div>
-              </div>
               <div id="5" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات تم  </span>
+                  <span>منصة خدمات تم </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="6" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات الهوية و الجنسية 
+                  <span>منصة خدمات الهوية و الجنسية
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
@@ -207,41 +197,41 @@
               </div>
               <div id="10" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات اّمر  </span>
+                  <span>منصة خدمات اّمر </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="11" class="slider__slide">
                 <div class="slide__content">
-                  <span> منصة خدمات الشرطة 
+                  <span> منصة خدمات الشرطة
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="12" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات الصحة 
+                  <span>منصة خدمات الصحة
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="13" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات المحاكم و كاتب العدل  
+                  <span>منصة خدمات المحاكم و كاتب العدل
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="14" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات البلديات 
+                  <span>منصة خدمات البلديات
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="15" class="slider__slide">
                 <div class="slide__content">
-                  <span> منصة خدمات الشركات 
+                  <span> منصة خدمات الشركات
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
@@ -255,49 +245,49 @@
               </div>
               <div id="17" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات الاستشارات الإدارية  
+                  <span>منصة خدمات الاستشارات الإدارية
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="18" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات الاستشارات القانونية  
+                  <span>منصة خدمات الاستشارات القانونية
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="19" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات التدريب المهني  
+                  <span>منصة خدمات التدريب المهني
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="20" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات تنمية المجتمع و الأصحاب الهمم 
+                  <span>منصة خدمات تنمية المجتمع و الأصحاب الهمم
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="21" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات التأشيرات السياحية 
+                  <span>منصة خدمات التأشيرات السياحية
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="22" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات التعليم 
+                  <span>منصة خدمات التعليم
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
               </div>
               <div id="23" class="slider__slide">
                 <div class="slide__content">
-                  <span>منصة خدمات التصميم الجرافيكي 
+                  <span>منصة خدمات التصميم الجرافيكي
                   </span>
                   <img src="assets/img/services/labor.png" class="slider__image" />
                 </div>
@@ -320,7 +310,7 @@
             <a href="#6">6</a>
             <a href="#7">7</a>
           </div> -->
-          
+
         </div>
 
         <div class="social d-flex justify-content-center">
@@ -328,7 +318,7 @@
             data-target="#exampleModalCenter">
             <i class="bi bi-play"></i>
             تسجيل</button>
-          <a href="http://wa.me/971503037137" target="_blank">
+          <a href="http://wa.me/971564004009" target="_blank">
             <button type="button" class="btn btn-outline-services">
               <i class="bi bi-whatsapp"></i>
               للإستفسار</button>
@@ -344,7 +334,7 @@
             <h2 style="color: white;">إتصال بنا</h2>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-md-6 footer-links">
+            <!-- <div class="col-lg-4 col-md-6 footer-links">
               <h4 class="text-center">إبق على إتصال</h4>
               <strong>إبق على إطلاع على آخر التطورات ولا تفوت الفرصة </strong><br><br>
               <div class="social-links">
@@ -356,18 +346,55 @@
                 <a href="https://www.linkedin.com/in/manasaty-ae-b7bb22207/" target="_blank" class="linkedin"><i
                     class="bi bi-linkedin"></i></a>
               </div>
-            </div>
-
+            </div> --> 
             <div class="col-lg-4 col-md-6 footer-links">
-              <h4 class="text-center">خريطة الموقع </h4>
+              <h4 class="text-end"><span>الإشتراك في النشرة الإخبارية</span> </h4>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-arrow-left-short"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="البريد الإلكتروني" aria-label="email" aria-describedby="basic-addon1">
+              </div>
+
+              <div class="social-links text-end">
+                <a class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://m.facebook.com/manasaty2021/posts" target="_blank" class="facebook"><i
+                    class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com/manasaty.ae?utm_medium=copy_link" target="_blank" class="instagram"><i
+                    class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/manasaty-ae-b7bb22207/" target="_blank" class="linkedin"><i
+                    class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4 class="text-center"><span>روابط سريعة</span> </h4>
               <ul style="text-align: right;">
-                <li><a href="#">الرئيسية</a><i class="bi bi-chevron-left"></i></li>
-                <li><a href="#about"> حول منصتي</a><i class="bi bi-chevron-left"></i> </li>
-                <li> <a href="#services">الخدمات</a><i class="bi bi-chevron-left"></i></li>
+                <li><a href="#">الرئيسية</a>
+                  <!-- <i class="bi bi-chevron-left"></i> -->
+                </li>
+                <li><a href="#about"> حول منصتي</a>
+                  <!-- <i class="bi bi-chevron-left"></i>  -->
+                </li>
+                <li> <a href="#services">الخدمات</a>
+                  <!-- <i class="bi bi-chevron-left"></i> -->
+                </li>
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-6 footer-contact">
+            <div class="col-lg-4 col-md-6 footer-links">
+              <div class="header-foot">
+                <h4>
+                 <span >مركز الاتصال </span> 
+                  <p><i class="bi bi-telephone-forward-fill"></i> 600-5667-72</p>
+                <p><i class="bi bi-whatsapp"></i> 0564004009</p>
+                </h4>
+                <!-- <i class="bi bi-whatsapp"></i> -->
+                <i class="head-icon bi bi-telephone-outbound-fill"></i>
+              </div>
+
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-6 footer-contact">
               <h4 class="text-center">إتصال بنا</h4>
               <p>
                 <strong>أبـوظــبي </strong>
@@ -375,7 +402,7 @@
                 <strong>الهاتف : </strong> 0564004009 / 024114566<br>
                 info@manasaty.ae <strong>: البريد الإلكتروني </strong>
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -416,11 +443,11 @@
   <!-- ======= End Modal ======= -->
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
 
 
 
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
