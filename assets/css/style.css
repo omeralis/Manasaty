@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #header #logo img {
-    max-height: 30px;
+    max-height: 130px;
   }
 }
 
@@ -786,9 +786,9 @@ h1, h2, h3, h4, h5, h6 {
     /* position: absolute; */
     /* background: rgba(6, 12, 34, 0.6); */
     /* background: rgb(8 56 87); */
-    width: 34%;
-    margin: 5rem 0 0 2rem;
-    height: 70%;
+    width: 100%;
+    /* margin: 5rem 0 0 2rem; */
+    height: 100%;
 }
 
 #hero {

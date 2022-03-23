@@ -308,7 +308,7 @@ class particles {
     //individual particles
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-    ctx.fillStyle = "#bb8f2c";
+    ctx.fillStyle = "#bb8f2c29";
     ctx.fill();
   }
 
@@ -380,7 +380,7 @@ function connect() {
 
       if (distance < (canvas.width / 7) * (canvas.height / 7)) {
         opacityValue = 1 - distance / 10000;
-        ctx.strokeStyle = "rgba(255,255,255, " + opacityValue / 1 + ")";
+        ctx.strokeStyle = "rgba(255,255,255, " + opacityValue / 3 + ")";
         ctx.lineWidth = 0.4;
         ctx.beginPath();
         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
