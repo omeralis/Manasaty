@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: end;
   font-size: 3rem;
   font-weight: 900;
-  color: #bb8f2c;
+  color: rgb(255 255 255);
   margin: 0 5rem;
 }
 .section-p{
@@ -533,7 +533,7 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 200px;
+  max-height: 300px;
   width: 100%;
   height: 100%;
 
@@ -783,13 +783,14 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #canvas1 {
-  /* position: absolute; */
-  /* background: rgba(6, 12, 34, 0.6); */
-
-  /* background: rgb(8 56 87); */
-  width: 100%;
-  height: 100%;
+    /* position: absolute; */
+    /* background: rgba(6, 12, 34, 0.6); */
+    /* background: rgb(8 56 87); */
+    width: 34%;
+    margin: 5rem 0 0 2rem;
+    height: 70%;
 }
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -1835,5 +1836,53 @@ color: #ffffff;
   border-color: #795910;
 }
 
-/*-----------------------------*/
 
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+#gallery {
+  padding: 60px;
+  overflow: hidden;
+}
+#gallery .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+#gallery .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid rgb(187 143 44);
+}
+#gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(187 143 44);
+}
+#gallery .swiper-slide-active {
+  text-align: center;
+}
+#gallery .swiper-slide {
+  border: 0.2rem dashed #e4ca9a;
+}
+#gallery .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid rgb(187 143 44) !important;
+}
+#gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(187 143 44) !important;
+}
+#gallery .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid rgb(187 143 44);
+}
+@media (min-width: 992px) {
+  #gallery .swiper-wrapper {
+    padding: 40px 0;
+  }
+  #gallery .swiper-slide-active {
+    border: 5px solid rgb(187 143 44);
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+    transform: scale(1.15);
+    margin-top: 6px;
+  }
+}

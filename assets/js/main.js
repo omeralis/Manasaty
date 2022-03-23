@@ -261,19 +261,19 @@ function updateSlidePosition(e, direction) {
         e.scrollLeft += firstSlideWidth;
     }
 }
-document
-    .querySelector(".js-slider-inner")
-    .addEventListener("scroll", scrollHandler);
-document
-    .querySelector(".js-slider-prev")
-    .addEventListener("click", function () {
-        updateSlidePosition(this.nextElementSibling, "prev");
-    });
-document
-    .querySelector(".js-slider-next")
-    .addEventListener("click", function () {
-        updateSlidePosition(this.previousElementSibling, "next");
-    });
+// document
+//     .querySelector(".js-slider-inner")
+//     .addEventListener("scroll", scrollHandler);
+// document
+//     .querySelector(".js-slider-prev")
+//     .addEventListener("click", function () {
+//         updateSlidePosition(this.nextElementSibling, "prev");
+//     });
+// document
+//     .querySelector(".js-slider-next")
+//     .addEventListener("click", function () {
+//         updateSlidePosition(this.previousElementSibling, "next");
+//     });
 /***************---canvas----***************** */
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
