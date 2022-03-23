@@ -483,6 +483,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: #9195a2;
 }
+#services .img-services-logo{
+  height: 10rem;
+  display: flex;
+  margin: auto;
+}
 .section-h4{
   text-align: end;
   font-size: 3rem;
@@ -924,8 +929,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .about-btn {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 900;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -1683,6 +1688,13 @@ color: #ffffff;
   }
   #footer .footer-top .footer-contact p {
     text-align: center;
+  }
+  #footer .footer-top .social-links{
+    text-align: center !important;
+  }
+  #footer .footer-top .footer-links ul li {
+    text-align: center !important;
+    padding: unset !important;
   }
 }
 
