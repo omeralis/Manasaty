@@ -545,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #header #logo img {
-    /* max-height: auto; */
+    max-height: 6em;
   }
 }
 
@@ -1718,6 +1718,8 @@ color: #ffffff;
 }
 #gallery .swiper-slide img{
   height: 8em;
+  display: flex;
+  margin: auto;
 }
 #gallery .swiper-pagination .swiper-pagination-bullet {
   border: 1px solid rgb(187 143 44) !important;
