@@ -545,7 +545,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #header #logo img {
-    max-height: 6em;
+    max-height: unset;
+    width: 100px;
+    height: 100px;
   }
 }
 
